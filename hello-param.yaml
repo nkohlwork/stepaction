@@ -12,5 +12,8 @@ spec:
     - name: result1
       description: The first result
   image: ubuntu
+  env:
+  - name: PARAM1
+    value: "$(params.param1)"
   script: |
-    echo -n hello $(params.param1) | tee $(step.results.result1.path)
+    echo -n hello ${PARAM1} | tee $(step.results.result1.path)
