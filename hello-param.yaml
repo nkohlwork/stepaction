@@ -12,6 +12,7 @@ spec:
     - name: result1
       description: The first result
       type: string
-  image: alpine
+  image: zshusers/zsh:4.3.15
   script: |
+    #!/usr/bin/env zsh
     echo -n hello HARDCODE | tee $(results.result1.path)
