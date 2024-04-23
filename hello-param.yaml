@@ -11,6 +11,7 @@ spec:
   results:
     - name: result1
       description: The first result
+      type: string
   image: alpine
   script: |
     echo -n hello HARDCODE | tee $(results.result1.path)
