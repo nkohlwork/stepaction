@@ -11,8 +11,6 @@ spec:
   results:
     - name: result1
       description: The first result
-      type: string
-  image: zshusers/zsh:4.3.15
+  image: ubuntu
   script: |
-    #!/usr/bin/env zsh
-    echo -n hello HARDCODE | tee $(results.result1.path)
+    echo -n hello HARDCODE
