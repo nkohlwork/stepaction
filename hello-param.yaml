@@ -13,4 +13,4 @@ spec:
       description: The first result
   image: alpine
   script: |
-    echo -n hello $(params.param1) | tee $(results.result1.path)
+    echo -n hello HARDCODE | tee $(results.result1.path)
