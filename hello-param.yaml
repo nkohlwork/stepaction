@@ -13,4 +13,4 @@ spec:
       description: The first result
   image: ubuntu
   script: |
-    echo -n hello HARDCODE
+    echo -n hello $(params.param1) | tee $(step.results.result1.path)
