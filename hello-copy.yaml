@@ -1,0 +1,7 @@
+apiVersion: tekton.dev/v1alpha1
+kind: StepAction
+metadata:
+  name: hello-world
+spec:
+  image: ubuntu
+  script: echo hello world!
