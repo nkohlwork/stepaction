@@ -5,8 +5,10 @@ metadata:
 spec:
   steps:
     - name: echo
-      foo: bar
       image: alpine
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
       script: |
         #!/bin/sh
         echo "Hello World"   
